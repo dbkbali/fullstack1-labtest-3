@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    // Lab test 3 Part 3
+
+    // 1.
+    function is_string(x) {
+        if (typeof(x) == 'string') {
+            return true
+        } else return false
+    }
+    console.log(is_string('w3resource')); 
+    console.log(is_string([1, 2, 4, 0]));
+
+    // 2. 
+    function is_Blank(y) {
+        if (y.length == 0) {
+            return true
+        } else return false
+    }
+    console.log(is_Blank(''));
+    console.log(is_Blank('abc'));
+
+    // 3.
+    function string_to_array(u) {
+        return u.trim().split(" ")
+    }
+    console.log(string_to_array("Robin Singh"));
+
+    // 4.
+    function truncate_string(s, n){
+        q = s.substr(0, n)
+        return q
+    }
+    console.log(truncate_string("Robin Singh",4));
+
+    // 5.
+
+    // 6.
+
+    // 7.
+    function capitalize_Words(words) {
+        words = words.toLowerCase()
+        .split(' ')
+        .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+        .join(' ')
+        return words
+    }
+    console.log(capitalize_Words('js string exercises'));
+
+
+
+    
+    </script>
+    
+</body>
+</html>

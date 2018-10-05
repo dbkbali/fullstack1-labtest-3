@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+        
+  // Lab test 3 Part 1
+
+  // 1.
+  function is_array(a) {
+      if(Array.isArray(a)){
+    	  return true
+			} 
+		    else {
+  	      return false
+        }
+      }
+  console.log(is_array('w3resource')); 
+  console.log(is_array([1, 2, 4, 0]));
+        
+  // 2. 
+  function array_Clone(b) {
+      if (Array.isArray(b)){
+				return b
+	    }
+  }
+  console.log(array_Clone([1, 2, 4, 0])); 
+  console.log(array_Clone([1, 2, [4, 0]]));
+
+  // 3.
+  function first(array, n) {
+    if (n == null)
+      return array[0]
+    if (n < 0)
+      return []
+      return array.slice(0, n)
+  }
+  console.log(first([7, 9, 0, -2]));
+  console.log(first([],3));
+  console.log(first([7, 9, 0, -2],3));
+  console.log(first([7, 9, 0, -2],6));
+  console.log(first([7, 9, 0, -2],-3));
+
+  // 4.
+  function last(array, n) {
+    if (n == null) 
+      return array[array.length - 1]
+      return array.slice(Math.max(array.length - n, 0))
+	}
+	console.log(last([7, 9, 0, -2]));
+	console.log(last([7, 9, 0, -2],3));
+	console.log(last([7, 9, 0, -2],6));
+
+	// 5.
+	myColor = ["Red", "Green", "White", "Black"]
+
+	function stringify(myColor){
+		console.log(myColor.toString())
+		console.log(myColor.toString())
+		console.log(myColor.join("+"))
+	}
+	stringify(myColor)
+	
+	// 6.
+	
+	// 7.
+	var arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ];
+
+	function sortAscend(nums) {
+		nums.sort(function(a, b){return a - b})
+		console.log(nums)
+	}
+	sortAscend(arr1)
+
+	// 8.
+	
+  </script>
+
+</body>
+</html>
+
